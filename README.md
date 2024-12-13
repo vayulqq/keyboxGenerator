@@ -10,3 +10,17 @@ A Python script used for generating Android keybox.xml for Tricky Store (a Magis
 ### Cautions
 
 Remember to store the script with Unix (LF) as the line separator. 
+
+### Versions
+
+#### v1.0
+
+This is the original version. 
+
+#### v2.0
+
+Briefly checking the content of the three child key files is supported. 
+
+The program will prompt the overwriting if files exist. 
+
+The device ID is generated randomly. 
