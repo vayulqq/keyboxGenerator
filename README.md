@@ -21,6 +21,8 @@ This is the original version.
 
 Briefly checking the content of the three child key files is supported. 
 
+Using ``ssh-keygen`` to convert an OpenSSL private key to the required RSA private key is supported. 
+
 The program will prompt the overwriting if files exist. 
 
 The device ID is generated randomly. 
