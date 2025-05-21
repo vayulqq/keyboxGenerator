@@ -3,7 +3,7 @@ name: Generate Keybox
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
     paths:
       - 'keyboxGenerator_v2.0.py'
 
@@ -26,10 +26,10 @@ jobs:
         sudo apt-get install -y openssl libssl-dev
 
     - name: Run keybox generator
-      run: python generate_keybox.py
+      run: python keyboxGenerator_v2.0.py
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: keybox-files
         path: |
